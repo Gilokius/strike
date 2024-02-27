@@ -8,24 +8,62 @@
           "min": 0,
           "max": 10
         },
+        "level": {
+          "value": 1
+        },
+        "speed": {
+          "value": 6
+        },
+        "reach": {
+          "value": 1
+        },
+        "size": "1x1",
+        
         "biography": ""
       }
     },
     "character": {
       "templates": ["base"],
       "attributes": {
-        "level": {
+        "background": "",
+        "origin": "",
+        "kit": "",
+        "class": "",
+        "role": "",
+        "skills": [],
+        "complications": [],
+        "tricks": [],
+        "flaws": [],
+        "relationships": [],
+        "ap": {
           "value": 1
+        },
+        "mt": {
+          "value": 0
+        },
+        "ra": {
+          "name": "",
+          "value": 0
+        },
+        "rb": {
+          "name": "",
+          "value": 0
+        },
+        "rc": {
+          "name": "",
+          "value": 0
         }
       }
     },
     "npc": {
       "templates": ["base"],
-      "cr": 0
+      "cr": 0,
+      "rank": "standard",
+      "type": ""
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "feature", "power", "feat", "advance"],
     "templates": {
       "base": {
         "description": ""
@@ -38,9 +76,26 @@
     "feature": {
       "templates": ["base"]
     },
-    "spell": {
+    "power": {
       "templates": ["base"],
-      "spellLevel": 1
+      "use": "atwill",
+      "actiontype": "attack",
+      "targets": [
+        {
+            "mode": "ranged",
+            "range": 5,
+            "burst": 0
+        }
+    ],
+      "roll": "true",
+      "damage": 2
+
+    },
+    "feat": {
+      "templates": ["base"]
+    },
+    "advance": {
+      "templates": ["base"]
     }
   }
 }

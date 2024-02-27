@@ -95,7 +95,7 @@ export class StrikeActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const features = [];
-    const spells = {
+    /*const spells = {
       0: [],
       1: [],
       2: [],
@@ -106,7 +106,7 @@ export class StrikeActorSheet extends ActorSheet {
       7: [],
       8: [],
       9: [],
-    };
+    };*/
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
