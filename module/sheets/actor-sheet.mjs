@@ -95,6 +95,14 @@ export class StrikeActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const features = [];
+    const feats = [];
+    const powers = [];
+    const advances = [];
+    const skills = [];
+    const tricks = [];
+    const flaws = [];
+    const relationships = [];
+    const complications = [];
     /*const spells = {
       0: [],
       1: [],
@@ -119,6 +127,30 @@ export class StrikeActorSheet extends ActorSheet {
       else if (i.type === 'feature') {
         features.push(i);
       }
+      else if (i.type === 'power') {
+        powers.push(i);
+      }
+      else if (i.type === 'feat') {
+        feats.push(i);
+      }
+      else if (i.type === 'advance') {
+        advances.push(i);
+      }
+      else if (i.type === 'skill') {
+        skills.push(i);
+      }
+      else if (i.type === 'trick') {
+        tricks.push(i);
+      }
+      else if (i.type === 'flaw') {
+        flaws.push(i);
+      }
+      else if (i.type === 'relationship') {
+        relationships.push(i);
+      }
+      else if (i.type === 'complication') {
+        complications.push(i);
+      }
       // Append to spells.
       else if (i.type === 'spell') {
         if (i.system.spellLevel != undefined) {
@@ -130,7 +162,14 @@ export class StrikeActorSheet extends ActorSheet {
     // Assign and return
     context.gear = gear;
     context.features = features;
-    context.spells = spells;
+    context.feats = feats;
+    context.powers = powers;
+    context.advances = advances;
+    context.advances = skills;
+    context.advances = tricks;
+    context.advances = flaws;
+    context.advances = relationships;
+    context.advances = complications;
   }
 
   /* -------------------------------------------- */

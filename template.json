@@ -30,11 +30,6 @@
         "kit": "",
         "class": "",
         "role": "",
-        "skills": [],
-        "complications": [],
-        "tricks": [],
-        "flaws": [],
-        "relationships": [],
         "ap": {
           "value": 1
         },
@@ -63,7 +58,7 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "power", "feat", "advance"],
+    "types": ["item", "feature", "power", "feat", "advance", "skill", "trick", "flaw", "relationship", "complication"],
     "templates": {
       "base": {
         "description": ""
@@ -95,6 +90,21 @@
       "templates": ["base"]
     },
     "advance": {
+      "templates": ["base"]
+    },
+    "skill": {
+      "templates": ["base"]
+    },
+    "trick": {
+      "templates": ["base"]
+    },
+    "flaw": {
+      "templates": ["base"]
+    },
+    "relationship": {
+      "templates": ["base"]
+    },
+    "complication": {
       "templates": ["base"]
     }
   }
